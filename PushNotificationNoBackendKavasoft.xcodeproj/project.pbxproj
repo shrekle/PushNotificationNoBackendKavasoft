@@ -11,6 +11,9 @@
 		394438392A0D5EDA00CAC925 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394438382A0D5EDA00CAC925 /* ContentView.swift */; };
 		3944383B2A0D5EDB00CAC925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3944383A2A0D5EDB00CAC925 /* Assets.xcassets */; };
 		3944383F2A0D5EDB00CAC925 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3944383E2A0D5EDB00CAC925 /* Preview Assets.xcassets */; };
+		CA7ED2FF2A0D996E00A82D56 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CA7ED2FE2A0D996E00A82D56 /* FirebaseAnalytics */; };
+		CA7ED3012A0D996E00A82D56 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CA7ED3002A0D996E00A82D56 /* FirebaseMessaging */; };
+		CA7ED3032A0D9A9000A82D56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA7ED3022A0D9A9000A82D56 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		3944383A2A0D5EDB00CAC925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3944383C2A0D5EDB00CAC925 /* PushNotificationNoBackendKavasoft.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationNoBackendKavasoft.entitlements; sourceTree = "<group>"; };
 		3944383E2A0D5EDB00CAC925 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA7ED3022A0D9A9000A82D56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CA7ED3042A0D9ADB00A82D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7ED3012A0D996E00A82D56 /* FirebaseMessaging in Frameworks */,
+				CA7ED2FF2A0D996E00A82D56 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,10 +59,12 @@
 		394438352A0D5EDA00CAC925 /* PushNotificationNoBackendKavasoft */ = {
 			isa = PBXGroup;
 			children = (
+				CA7ED3042A0D9ADB00A82D56 /* Info.plist */,
 				394438362A0D5EDA00CAC925 /* PushNotificationNoBackendKavasoftApp.swift */,
 				394438382A0D5EDA00CAC925 /* ContentView.swift */,
 				3944383A2A0D5EDB00CAC925 /* Assets.xcassets */,
 				3944383C2A0D5EDB00CAC925 /* PushNotificationNoBackendKavasoft.entitlements */,
+				CA7ED3022A0D9A9000A82D56 /* GoogleService-Info.plist */,
 				3944383D2A0D5EDB00CAC925 /* Preview Content */,
 			);
 			path = PushNotificationNoBackendKavasoft;
@@ -85,6 +94,10 @@
 			dependencies = (
 			);
 			name = PushNotificationNoBackendKavasoft;
+			packageProductDependencies = (
+				CA7ED2FE2A0D996E00A82D56 /* FirebaseAnalytics */,
+				CA7ED3002A0D996E00A82D56 /* FirebaseMessaging */,
+			);
 			productName = PushNotificationNoBackendKavasoft;
 			productReference = 394438332A0D5EDA00CAC925 /* PushNotificationNoBackendKavasoft.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +126,9 @@
 				Base,
 			);
 			mainGroup = 3944382A2A0D5EDA00CAC925;
+			packageReferences = (
+				CA7ED2FD2A0D996E00A82D56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 394438342A0D5EDA00CAC925 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +145,7 @@
 			files = (
 				3944383F2A0D5EDB00CAC925 /* Preview Assets.xcassets in Resources */,
 				3944383B2A0D5EDB00CAC925 /* Assets.xcassets in Resources */,
+				CA7ED3032A0D9A9000A82D56 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +286,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushNotificationNoBackendKavasoft/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +325,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushNotificationNoBackendKavasoft/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -354,6 +373,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA7ED2FD2A0D996E00A82D56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA7ED2FE2A0D996E00A82D56 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA7ED2FD2A0D996E00A82D56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CA7ED3002A0D996E00A82D56 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA7ED2FD2A0D996E00A82D56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3944382B2A0D5EDA00CAC925 /* Project object */;
 }
